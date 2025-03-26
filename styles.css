@@ -5,20 +5,22 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #fff0f5; /* Light pink background */
 }
 
 /* Header styles */
 header {
-    background-color: #35424a;
+    background-color: #e91e63; /* Pink background */
     color: white;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
 }
 
 header h1 {
     margin: 0;
     padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -33,11 +35,16 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: all 0.3s;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
 nav a:hover {
-    color: #e8491d;
+    color: #ff0000; /* Red */
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
 }
 
 /* Main content styles */
@@ -51,15 +58,73 @@ section {
     background: white;
     margin-bottom: 20px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.2);
+    border-left: 5px solid #ff4081; /* Pink border */
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    color: #d81b60; /* Dark pink */
+    border-bottom: 2px solid #ffcdd2; /* Light pink */
+    padding-bottom: 8px;
+}
+
+/* Color accents */
+a {
+    color: #e91e63; /* Pink links */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #c2185b; /* Darker pink on hover */
 }
 
 /* Footer styles */
 footer {
-    background-color: #35424a;
+    background-color: #c2185b; /* Darker pink */
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+    box-shadow: 0 -4px 10px rgba(194, 24, 91, 0.3);
+}
+
+/* Button styles */
+button, 
+input[type="submit"] {
+    background-color: #e91e63; /* Pink */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(233, 30, 99, 0.3);
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #ff0000; /* Red */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.4);
+}
+
+/* Form styling */
+input, textarea {
+    border: 2px solid #ffcdd2; /* Light pink border */
+    border-radius: 8px;
+    padding: 8px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #e91e63; /* Pink focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
 }
